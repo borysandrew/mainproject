@@ -1,0 +1,166 @@
+html {
+    max-width: 900px;
+    margin: 0;
+    height: 1350px;
+    background: url("../img/background.jpg") no-repeat;
+    background-size: 100%;
+}
+
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+@media (max-width:437px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    margin: 0 45px;
+}
+
+/*@media (max-width:437px){*/
+
+/*    nav{*/
+
+/*        opacity: 0;*/
+
+/*    }*/
+
+/*}*/
+
+p {
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    font-size: 30px;
+    color: #aeafaf;
+    background-color: #edeff2;
+    font-family: Helvetica;
+
+}
+
+@media (max-width: 700px) {
+    p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 580px) {
+    p {
+        font-size: 12px;
+    }
+}
+
+p:hover {
+    background-color: #d8d8d8;
+    color: #ffffff;
+}
+
+a:link {
+    text-decoration: none;
+    color: #aeafaf;
+}
+
+a:visited {
+    color: #aeafaf;
+}
+
+#heading {
+    display: grid;
+    grid-template-columns: 2.1fr 1fr 2.1fr;
+    grid-template-rows: 35px;
+    margin: 0;
+    text-align: center;
+    padding: 5px 40px;
+}
+
+@media(max-width:450px) {
+    #heading {
+        grid-template-columns: 1.5fr 1fr 1.5fr;
+    }
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+}
+
+@media (max-width:700px) {
+    h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:580px) {
+    h3 {
+        font-size: 10px;
+        margin: 4px;
+    }
+}
+
+hr {
+    max-width: 310px;
+    height: 2px;
+    text-align: center;
+    margin: 10px;
+}
+
+#picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 20px 0;
+}
+
+img {
+    grid-column-start: 2;
+}
+
+@media(max-width:437px) {
+    img {
+        opacity: 0;
+    }
+}
+
+.hamburger {
+    opacity: 0;
+}
+
+@media (max-width: 437px) {
+    html {
+        width: 400px;
+        height: 700px;
+    }
+    .hamburger {
+        opacity: 100;
+        float: right;
+        margin: 0 20px;
+        line-height: 30px;
+        padding: 3px 8px;
+        color: #aeafaf;
+        border: 0;
+        cursor: pointer;
+        background-color: #edeff2;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 116px;
+        margin: 35px 10px 0 248px;
+        display: none;
+    }
+}
